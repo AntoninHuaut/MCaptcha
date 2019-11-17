@@ -17,20 +17,14 @@ exports.giveAllRole = async (user) => {
     const guildKey = {};
     guildList.forEach(item => guildKey[item.guildId] = item.roleId);
 
-    let guildMsg = "";
-
     client.guilds.forEach(async (guild, guildId) => {
         if (!guildKey[guildId]) return;
 
         let member = guild.members.get(user.id);
         if (!member) return;
 
-        let res = await this.giveRole(member, guildKey[guildId]);
-
-        if (res == 1) guildMsg += (guildMsg.length ? ", " : "") + guild.name;
+        this.giveRole(member, guildKey[guildId]);
     });
-
-    if (guildMsg.length) user.send(`:information_source: Vous avez reçu le rôle sur le(s) serveur(s) : ${guildMsg}`).catch(() => {});
 }
 
 exports.generateLink = async (user, numGuild, guildName) => {
