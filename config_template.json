@@ -1,0 +1,20 @@
+{
+    "port": 4100,
+    "discord": {
+        "token": "",
+        "activity": "Utilisez c.",
+        "prefix": "c."
+    },
+    "recaptcha": {
+        "siteKey": "",
+        "secretKey": "",
+        "host": "http://localhost:4100"
+    },
+    "sql": {
+        "host": "",
+        "port": 3306,
+        "database": "",
+        "user": "",
+        "password": ""
+    }
+}

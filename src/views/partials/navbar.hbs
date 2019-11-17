@@ -1,0 +1,8 @@
+<nav class="navbar navbar-dark blurple d-flex justify-content-center">
+    <div id="userInfo">
+        {{#if discord}}
+        <img src="{{discord.avatarURL}}" class="rounded-circle img-responsive" />
+        <span class="ml-2 navbar-brand">{{discord.username}}#{{discord.discriminator}}</span>
+        {{/if}}
+    </div>
+</nav>

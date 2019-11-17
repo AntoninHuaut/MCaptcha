@@ -1,0 +1,34 @@
+.container-base {
+    padding-top: 50px;
+}
+
+#userInfo, #userInfo img {
+    height: 64px;
+}
+
+.navbar-brand {
+    vertical-align: middle;
+}
+
+.blurple {
+    color: #FFFFFF;
+    background-color: #7289DA;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+.greyple {
+    background-color: #99AAB5;
+}
+
+.dark {
+    color: #FFFFFF;
+    background-color: #2C2F33;
+}
+
+.black {
+    color: #FFFFFF;
+    background-color: #23272A;
+}

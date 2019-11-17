@@ -1,0 +1,21 @@
+{
+  "name": "mcaptcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/apps.js",
+  "scripts": {
+    "start": "node src/apps.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "express": "^4.17.1",
+    "express-hbs": "^2.2.0",
+    "express-rate-limit": "^5.0.0",
+    "express-recaptcha": "^5.0.1",
+    "mysql": "^2.17.1",
+    "nanoid": "^2.1.7"
+  }
+}
