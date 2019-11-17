@@ -7,7 +7,6 @@ const config = require("../../config.json");
 
 client.on('message', async (msg) => {
     if (!msg.content.startsWith(config.discord.prefix)) return;
-    if (msg.content.includes('testadd')) return guildJoin(msg.member);
     commands(msg);
 });
 
