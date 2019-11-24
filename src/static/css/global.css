@@ -2,7 +2,8 @@
     padding-top: 50px;
 }
 
-#userInfo, #userInfo img {
+#userInfo,
+#userInfo img {
     height: 64px;
 }
 

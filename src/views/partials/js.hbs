@@ -1,2 +1,12 @@
 <script src="/lib/jquery-3.4.1.min.js"></script>
 <script src="/lib/bootstrap.min.js"></script>
+<script src="/lib/detectmobilebrowser.js"></script>
+<script>
+    refresh();
+
+    function refresh() {
+        const container = [$(".container")];
+        if (!container) return;
+        if (jQuery.browser.mobile) container.forEach(el => ["w-25", "w-50", "w-75"].forEach(classEl => el.removeClass(classEl)));
+    }
+</script>

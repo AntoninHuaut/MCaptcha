@@ -49,9 +49,14 @@ exports.checkLogin = async function (req, res) {
         opt.msg = 'Une erreur du serveur est survenue, la vérification a été annulée';
     }
 
-    res.render('callback', {
-        msg: opt.msg
-    })
+    const servers = [];
+    client.guilds
+    .filter(guild => guild.members.has(userId))
+    .forEach(guild => servers.push(guild.name));
+
+    if (servers.length) opt.servers = servers;
+
+    res.render('callback', opt);
 };
 
 function getDiscordInfo(checkRes) {
